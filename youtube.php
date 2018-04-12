@@ -1,5 +1,6 @@
 <?php
 header("Content-Type: application/json");
+header('Access-Control-Allow-Origin: *');
 if (isset($_GET['url']) && isset($_GET['list'])) {
     $url = $_GET['url'];
     $list = $_GET['list'];
